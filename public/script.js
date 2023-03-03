@@ -71,19 +71,23 @@ card.forEach((elem) => {
   });
 }); 
 
-/*
-const flipCard = document.querySelectorAll(".projects .cards")
+
+const flipCard = document.querySelectorAll(".flip-card-back")
 
 flipCard.forEach(e => {
-  const flipCardInner = document.querySelectorAll(".flip-card")
+  const flipCardInner = document.querySelectorAll(".flip-card-front")
   flipCardInner.forEach(o =>{
     e.addEventListener("mouseover", () => {
-      e.style.filter="blur(20px)"
+      e.style.filter="blur(0px)"
+      o.style.filter="blur(5px)"
+    })
+    e.addEventListener("mouseout", () => {
+      e.style.filter="blur(0px)"
       o.style.filter="blur(0px)"
     })
   })
 })
-*/
+
 
 
 

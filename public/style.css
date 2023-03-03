@@ -18,6 +18,11 @@
   user-select: none; /* Standard syntax */
 }
 
+* a{
+  text-decoration: none;
+  color: #fff;
+}
+
 body {
   min-height: 100vh;
   display: flex;
@@ -403,7 +408,7 @@ button:hover:before {
 .flip-card {
   background-color: transparent;
   width: 500px;
-  height: 250px;
+  height: 500px;
   perspective: 1000px;
   font-family: sans-serif;
   margin: 50px;
