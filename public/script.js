@@ -69,7 +69,35 @@ card.forEach((elem) => {
       });
     });
   });
-}); /*
+}); 
+
+/*
+const flipCard = document.querySelectorAll(".projects .cards")
+
+flipCard.forEach(e => {
+  const flipCardInner = document.querySelectorAll(".flip-card")
+  flipCardInner.forEach(o =>{
+    e.addEventListener("mouseover", () => {
+      e.style.filter="blur(20px)"
+      o.style.filter="blur(0px)"
+    })
+  })
+})
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 /*
 document.querySelectorAll(".card").forEach(elem =>
