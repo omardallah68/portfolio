@@ -71,7 +71,7 @@ card.forEach((elem) => {
   });
 }); 
 
-
+/*
 const flipCard = document.querySelectorAll(".flip-card-back")
 
 flipCard.forEach(e => {
@@ -87,7 +87,7 @@ flipCard.forEach(e => {
     })
   })
 })
-
+*/
 
 
 
