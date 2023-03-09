@@ -69,7 +69,34 @@ card.forEach((elem) => {
       });
     });
   });
-}); /*
+}); 
+
+
+
+
+
+
+
+const flipCardBack = document.querySelectorAll(".flip-card-back")
+flipCardBack.forEach((er) =>{
+  const btnO= er.querySelector(".show")
+  btnO.addEventListener("click", ()=>{
+    const fCA= er.querySelector(er,"::after")
+    console.log(fCA)
+    fCA.style.display ="flex";
+    btnO.after.style.transform="scale(0.237) rotateY(0deg) translateX(233px)"
+    btnO.after.style.content="url(./allgemeinePraxisScreenShot.jpg)"
+  })
+})
+
+
+
+
+
+
+
+
+/*
 
 /*
 const flipCard = document.querySelectorAll(".flip-card-back")

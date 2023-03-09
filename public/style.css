@@ -109,6 +109,7 @@ section {
   width: 100%;
   min-height: 100vh;
   background-color: #161616;
+  overflow: hidden;
 }
 
 .first {
@@ -137,6 +138,10 @@ section {
   color: var(--color1);
   letter-spacing: 3px;
   margin: 50px;
+}
+
+.projects .title{
+  margin-bottom: 200px;
 }
 
 .turn {
@@ -414,11 +419,12 @@ button:hover:before {
 
 .flip-card {
   background-color: transparent;
-  width: 500px;
+  width: 450px;
   height: 500px;
-  perspective: 1000px;
+  perspective: 1500px;
   font-family: sans-serif;
-  margin: 50px;
+  margin: -110px;
+  margin-top: 0;
   transition: 0.4s ease-in-out;
 }
 
@@ -437,10 +443,11 @@ button:hover:before {
   transition: transform 0.8s;
   transform-style: preserve-3d;
   z-index: 1;
+  transform: rotate3D(0, 1, 0, 55deg);
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotate3D(10, 40, 20, 180deg);
+  transform: rotate3D(0, 180, 0, 180deg);
 }
 
 .flip-card-front,
@@ -480,7 +487,7 @@ button:hover:before {
     var(--color1) 48%
   );
   color: #080808;
-  transform: rotate3D(10, 50, 10, 180deg);
+  transform: rotate3D(0, 180, 0, 180deg);
   background-size: 200% 100%;
   background-position: 100% 0;
   animation: load89234 2s infinite;
@@ -503,7 +510,7 @@ button:hover:before {
   filter: blur(0px);
   opacity: 1;
   z-index: 2;
-  transform: scale(1.3);
+  transform: scale(1.1);
 }
 
 .praxisPhoto {
@@ -511,12 +518,94 @@ button:hover:before {
   height: 200px;
   border-radius: 1rem;
 }
+.flip-card-back::after{
+  content: "";
+    background: black;
+    width: 1900px;
+    display: none;
+    height: 2114px;
+    position: absolute;
+    transform: scale(0.237) rotateY(180deg) translateX(1667px);
+    left: -330px;
+    border-radius: 0px 50px 50px 0px;
+    align-items: center;
+    justify-content: center;
+    transition: 5s ease-in-out
+}
+
+/*.flip-card:hover .flip-card-back::after{
+  content: url(./allgemeinePraxisScreenShot.jpg);
+  display: flex;
+  transform: scale(0.237) rotateY(0deg) translateX(233px);
+}*/
 
 @keyframes load89234 {
   100% {
     background-position: -100% 0;
   }
 }
+
+
+.contactMe .card {
+  position: relative;
+  width: 450px;
+  height: 500px;
+  background: #080808;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 0px;
+  overflow: hidden;
+}
+
+.contactMe .card::before,
+.contactMe .card::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: var(--color1);
+  color: #080808;
+  transition: all 0.5s;
+}
+
+.contactMe .card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.contactMe .card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.contactMe .card:hover::before,
+.contactMe .card:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.contactMe .email:hover:after {
+  content: "omardallah68@gmai.com";
+}
+
+.contactMe .telefonnummer:hover:after {
+  content: "+49 177 957 68 59";
+}
+
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
