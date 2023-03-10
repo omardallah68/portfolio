@@ -81,11 +81,11 @@ const flipCardBack = document.querySelectorAll(".flip-card-back")
 flipCardBack.forEach((er) =>{
   const btnO= er.querySelector(".show")
   btnO.addEventListener("click", ()=>{
-    const fCA= er.querySelector(er,"::after")
+    const fCA= er.querySelector("::after")
     console.log(fCA)
-    fCA.style.display ="flex";
-    btnO.after.style.transform="scale(0.237) rotateY(0deg) translateX(233px)"
-    btnO.after.style.content="url(./allgemeinePraxisScreenShot.jpg)"
+    fCA.display = "flex";
+    fCA.style.transform = "scale(0.237) rotateY(0deg) translateX(233px)"
+    fCA.style.content = "url(./allgemeinePraxisScreenShot.jpg)"
   })
 })
 
