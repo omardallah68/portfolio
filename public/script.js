@@ -74,7 +74,7 @@ card.forEach((elem) => {
 
 
 
-
+/*
 
 
 const flipCardBack = document.querySelectorAll(".flip-card-back")
@@ -91,7 +91,7 @@ flipCardBack.forEach((er) =>{
 
 
 
-
+*/
 
 
 
