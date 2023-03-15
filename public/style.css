@@ -76,6 +76,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: black;
 }
 
 nav {
@@ -126,6 +127,7 @@ section {
   pointer-events: none;
   z-index: 0;
   padding: 30px;
+  max-width: 815px;
 }
 
 .first:hover {
@@ -505,7 +507,11 @@ button:hover:before {
 
 .cards:hover .flip-card:not(:hover) {
   filter: blur(2px);
-  opacity: 0.5;
+  opacity: 0.9;
+}
+
+.cards:hover .flip-card-front:not(:hover) {
+  background: #080808;
 }
 
 .cards:hover .flip-card:hover {
@@ -517,6 +523,7 @@ button:hover:before {
 
 .flip-card:hover .flip-card-back {
   border-radius: 1rem 0  0 1rem;
+  transform: rotate3D(0, 1, 0, 180deg) rotate3d(0, 1, 0, 45deg);
 }
 
 .flip-card:not(:hover) .flip-card-back {
@@ -559,12 +566,12 @@ button:hover:before {
     align-items: center;
     transition: 0.4s ease-in-out;
     perspective: 3500px;
-}/*
+}
 .flip-card-inner:hover .back {
     
         transform: rotate3D(0, 1, 0, 180deg) rotate3d(0, 1, 0, 315deg) translate3d(-163px, 0px, -70px);
-    display: none;
-}*/
+    display: flex;
+}
 
 /*
 .flip-card-back::after{

@@ -75,7 +75,7 @@ card.forEach((elem) => {
 
 
 
-
+/*
 
 const flipCard = document.querySelectorAll(".flip-card-inner")
 flipCard.forEach((er) =>{
@@ -110,7 +110,7 @@ flipCard.forEach((er) =>{
 
   
   
-})
+})*/
 
 
 
