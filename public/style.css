@@ -241,7 +241,7 @@ section {
   width: 6px;
   background-color: white;
   top: 0;
-  bottom: 0;
+  bottom: 80px;
   left: 50%;
   margin-left: -3px;
 }
