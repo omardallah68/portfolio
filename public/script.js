@@ -74,24 +74,47 @@ card.forEach((elem) => {
 
 
 
-/*
 
 
-const flipCardBack = document.querySelectorAll(".flip-card-back")
-flipCardBack.forEach((er) =>{
+
+const flipCard = document.querySelectorAll(".flip-card-inner")
+flipCard.forEach((er) =>{
+  const flipCardBack = er.querySelector(".flip-card-back")
+  const fCA= er.querySelector(".back")
   const btnO= er.querySelector(".show")
-  btnO.addEventListener("click", ()=>{
-    const fCA= er.querySelector("::after")
-    console.log(fCA)
-    fCA.display = "flex";
-    fCA.style.transform = "scale(0.237) rotateY(0deg) translateX(233px)"
-    fCA.style.content = "url(./allgemeinePraxisScreenShot.jpg)"
+
+  er.addEventListener("mouseover",()=>{
+    er.style.display="flex"
+    flipCardBack.style.display="flex"
   })
+    
+  flipCardBack.addEventListener("mouseout",()=>{
+      fCA.style.display="none"
+      fCA.style.transform="rotate3D(0, 1, 0, 0deg)"
+      flipCardBack.style.transform="rotate3D(0, 1, 0, 180deg)"
+  })
+  
+  btnO.addEventListener("click", ()=>{
+    console.log(flipCardBack)
+    if(fCA.style.display=== "flex"){
+      fCA.style.display="none"
+      fCA.style.transform="rotate3D(0, 1, 0, 0deg)"
+      flipCardBack.style.transform="rotate3D(0, 1, 0, 180deg)"
+   }
+    else{
+       fCA.style.display = "flex";
+    fCA.style.transform="rotate3D(0, 1, 0, 180deg) rotate3d(0, 1, 0, 315deg) translate3d(-163px, 0px, -70px)";      
+      flipCardBack.style.transform="rotate3D(0, 1, 0, 180deg) rotate3d(0, 1, 0, 45deg)"
+    }
+  })
+
+  
+  
 })
 
 
 
-*/
+
 
 
 
