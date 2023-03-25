@@ -58,6 +58,8 @@ footer {
   display: flex;
   justify-content: space-around;
   height: 100px;
+  background-color: #666666; 
+  padding: 0px 100px;
 }
 
 .headerName {
@@ -76,7 +78,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: black;
+  color: #ffffffa6;
 }
 
 nav {
@@ -93,6 +95,14 @@ nav a {
   letter-spacing: 1px;
   text-decoration: none;
   color: #161616;
+}
+
+footer nav{
+  margin-right: 0;
+}
+
+footer nav a{
+  color: #ffffffa6;
 }
 
 .home {
@@ -609,8 +619,8 @@ button:hover:before {
 
 .contactMe .card {
   position: relative;
-  width: 450px;
-  height: 500px;
+  width: 500px;
+  height: 100px;
   background: #080808;
   display: flex;
   align-items: center;
@@ -618,17 +628,27 @@ button:hover:before {
   font-size: 25px;
   font-weight: bold;
   border-radius: 15px;
-  cursor: pointer;
   box-shadow: 0px 0px 0px 0px;
+  cursor: pointer;
   overflow: hidden;
+}
+
+.contactMe .cards a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0px 0px 0px 0px;
+  border: 0;
 }
 
 .contactMe .card::before,
 .contactMe .card::after {
   position: absolute;
   content: "";
-  width: 20%;
-  height: 20%;
+  width: 400px;
+  height: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
